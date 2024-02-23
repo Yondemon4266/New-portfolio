@@ -11,7 +11,7 @@ export default function Header() {
           Ali Uslu
         </h2>
         <h2 className="text-[4.9rem] max-2xl:text-[3.8rem] text-gray-400 max-xl:text-4xl max-md:text-3xl max-sm:text-2xl">
-          I make ideas & things alive
+          I bring your ideas to life
         </h2>
         <p className=" text-4xl max-2xl:text-2xl font-light text-gray-300 max-md:text-xl max-sm:text-lg">
           As a dedicated{" "}
