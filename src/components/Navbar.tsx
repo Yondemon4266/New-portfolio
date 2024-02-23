@@ -39,9 +39,13 @@ export default function Navbar({ navVisible }: { navVisible: boolean }) {
         >
           Contact
         </a>
-        <button className="border-2 border-cyan-400 p-2 text-cyan-400 rounded-md hover:bg-cyan-700 hover:text-cyan-100 animate-[nav1_1.2s_forwards]">
+        <a
+          href="./CV_ALI_FRONTDEV_ALTERN.pdf"
+          target="_blank"
+          className="border-2 border-cyan-400 p-2 text-cyan-400 rounded-md hover:bg-cyan-700 hover:text-cyan-100 animate-[nav1_1.2s_forwards]"
+        >
           Resume
-        </button>
+        </a>
       </div>
       <button
         type="button"
