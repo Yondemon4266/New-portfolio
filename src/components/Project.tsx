@@ -38,7 +38,7 @@ export default function Project({ projet, index }: any) {
         onClick={() => handleDivClick(projet.link)}
         className={`absolute ${
           isIndexPair ? "right-10" : "left-10"
-        } max-lg:invisible max-lg:opacity-0 max-lg:overflow-y-scroll max-lg:overflow-x-hidden max-lg:group-hover:visible max-lg:group-hover:opacity-100 max-lg:cursor-pointer  max-lg:duration-700 max-lg:w-full max-lg:h-full max-lg:translate-y-0 max-lg:left-0 max-lg:right-0 max-lg:top-0 max-lg:justify-center max-lg:bg-blue-950/[.85]  rounded-lg top-1/2 -translate-y-1/2 h-full w-1/2 flex flex-col gap-4 justify-center`}
+        }  max-lg:invisible max-lg:opacity-0 max-lg:overflow-y-scroll max-lg:overflow-x-hidden max-lg:group-hover:visible max-lg:group-hover:opacity-100 max-lg:cursor-pointer  max-lg:duration-700 max-lg:w-full max-lg:h-full max-lg:translate-y-0 max-lg:left-0 max-lg:right-0 max-lg:top-0 max-lg:justify-center max-lg:bg-blue-950/[.85]  rounded-lg top-1/2 -translate-y-1/2 h-full w-1/2 flex flex-col gap-4 justify-center`}
       >
         <div
           className={` ${
@@ -60,11 +60,11 @@ export default function Project({ projet, index }: any) {
 
            shadow-md shadow-black bg-blue-950/[.85] max-lg:bg-transparent max-lg:shadow-none max-lg:text-sm max-md:text-xxs   h-fit flex items-center justify-center text-justify p-4 max-lg:p-0 max-lg:px-6 max-md:px-2 rounded-lg`}
         >
-          <p>{projet.infos}</p>
+          <p>{projet.infos.slice(0, 100) + "..."}</p>
         </div>
 
         <ul
-          className={`uppercase text-gray-300 font-semibold flex gap-2 max-lg:text-xs ${
+          className={`uppercase text-gray-300 font-semibold flex gap-2 max-lg:text-[0.5rem] ${
             isIndexPair
               ? "self-end max-lg:self-center"
               : "self-start max-lg:self-center"

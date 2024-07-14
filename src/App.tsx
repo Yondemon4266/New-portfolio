@@ -9,7 +9,7 @@ import { projectsData } from "./data/projectsData.js";
 import Footer from "./components/Footer.js";
 
 export default function App() {
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(false);
   const [navVisible, setNavVisible] = useState(true);
   useEffect(() => {
     const fakeLoading = setTimeout(() => {

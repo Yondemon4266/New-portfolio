@@ -8,7 +8,7 @@ export default function ListElement({
   children: ReactElement;
 }) {
   return (
-    <li className="flex gap-2 items-center">
+    <li className="flex gap-2 items-center ">
       {children}
       <p>{text}</p>
     </li>

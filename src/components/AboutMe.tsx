@@ -1,10 +1,9 @@
 import ListElement from "./ListElement";
-import { SiTypescript } from "react-icons/si";
+import { SiExpress, SiTypescript } from "react-icons/si";
 import { IoLogoJavascript } from "react-icons/io5";
 import { FaReact } from "react-icons/fa";
 import { FaNodeJs } from "react-icons/fa";
 import { SiTailwindcss } from "react-icons/si";
-import { SiExpress } from "react-icons/si";
 
 export default function AboutMe() {
   return (
@@ -45,7 +44,7 @@ export default function AboutMe() {
         <br />
         Here are a few technologies I have been working with recently:
       </p>
-      <ul className="grid grid-cols-2 grid-rows-3 w-fit gap-y-3 gap-x-6 my-4 text-sm text-gray-300 uppercase font-semibold">
+      <ul className="md:grid grid-cols-3 md:grid-rows-3 flex flex-wrap items-center justify-center w-fit gap-y-3 gap-x-6 my-4 md:text-sm text-xs text-gray-300 uppercase font-semibold mx-auto">
         <ListElement text="Javascript">
           <IoLogoJavascript className="text-yellow-500 rounded-sm" />
         </ListElement>
@@ -63,6 +62,12 @@ export default function AboutMe() {
         </ListElement>
         <ListElement text="Express">
           <SiExpress className="text-black bg-white rounded-sm" />
+        </ListElement>
+        <ListElement text="NextJS">
+          <img
+            src="./next.svg"
+            className="h-[14px] w-[14px]   rounded-full outline-none border-none"
+          />
         </ListElement>
       </ul>
     </>
